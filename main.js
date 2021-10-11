@@ -49,6 +49,7 @@ function registerEvents() {
   // click with mouse
   keys.forEach(function (key) {
     key.addEventListener('click', playNote)
+    key.addEventListener('touchstart', playNote)
     key.addEventListener('transitionend', removePlayingClass)
   })
 
